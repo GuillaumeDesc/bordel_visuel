@@ -26,8 +26,8 @@ if($_FILES){
 		   } else {
 		     echo 'error : ' . $document->error;
 		   }
+		}
+	} else {
+		echo 'Mauvais type de fichier, ca fichier... :/  ';
 	}
-} else {
-echo 'Mauvais type de fichier, ca fichier... :/  ';
-}
 }
