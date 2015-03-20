@@ -3,7 +3,7 @@
 require_once('class.upload.php');
 
 if($_FILES){
-	if( ($_FILES["newfile"]["type"] == "image/png") || ($_FILES["newfile"]["type"] == "image/jpeg") || ($_FILES["newfile"]["type"] == "image/gif") || ($_FILES["newfile"]["type"] == "image/svg+xml") ){
+	if( ($_FILES["newfile"]["type"] == "image/png") || ($_FILES["newfile"]["type"] == "image/jpeg") || ($_FILES["newfile"]["type"] == "image/gif") ){
 	//print_r( $_FILES );
 	$document = new Upload( $_FILES['newfile'] );
 	if ($document->uploaded) {
