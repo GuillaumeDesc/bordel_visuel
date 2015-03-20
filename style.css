@@ -1,0 +1,116 @@
+			html, body {
+				font-family: sans-serif;
+				background: #222222;
+				color: #222;
+			}
+
+			
+
+
+			span a {
+				width: 250px;
+				text-decoration: none;
+			}
+
+			h1 {
+				width: 250px;
+				z-index: 99999999;
+				font-family: 'Advent Pro', sans-serif;
+				font-size: 74px;
+				letter-spacing: 2px;
+				text-align: center;
+				display: block;
+				margin: 0 auto;
+				border: 4px solid black;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: #222;
+			}
+
+			h1:hover {
+				background: #222;
+				color: #f2f2f2;
+			}
+
+			p {
+				font-size: 18px;
+				width: 250px;
+				margin: 30px auto;
+				text-align: left;
+				font-family: serif;
+			}
+
+			span {
+				width: 300px;
+				min-height: 100%;
+				background: #f2f2f2;
+				position: fixed;
+				top: 0;
+				text-align: center;
+				z-index: 9999;
+				padding: 20px 0;
+				font-size: 21px;
+				left: 0px;
+				transition-duration: .5s;
+			}
+
+			form {
+				width: 250px;
+				margin: 0 auto;
+				left: 0;
+			}
+
+			ul{
+				margin-left: 300px;
+				background: #222222;
+			}
+
+				li, li a, li a img {
+					list-style: none;
+					display: inline-block;
+					width: 10%;
+					height: 10vh;
+				}
+
+				li a, li a img {
+					width: 100%;
+					opacity: .42;
+					box-shadow: 0 0 0px 0 #f2f2f2;
+					transition-duration:.25s;
+				}
+
+					li a:hover, li a img:hover {
+						opacity: 1;
+						z-index: 999999;
+					}
+
+					input {
+						width: 250px;
+						padding: 15px 21px;
+						border: 2px solid #222;
+						margin: 0 auto;
+						margin-top: 20px;
+						position: relative;
+					}
+
+						label {font-family: serif;}
+
+						#submit {
+							width: auto;
+							background: none;
+							border-radius: 0;
+							font-size: 16px;
+							padding: 5px;
+							cursor: pointer;
+							margin: 15px;
+						}
+
+						#submit:hover{
+							background: #222;
+							color: #f2f2f2;
+						}
+
+				@media screen and (max-width: 600px) {
+					ul {display: none; visibility: hidden;}
+					span{width: 100%;}
+				}
